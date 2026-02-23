@@ -54,8 +54,10 @@ The model demonstrates relative precision in identifying most recurring species 
 
 ### Training Progress
 
-Data Augmentation: To improve the signal-to-noise ratio, the training dataset was augmented by removing background noise in Adobe Audition.
-Class Imbalance Handling: Because bird vocalizations are sparse, all classes were boosted during training using pos_weight in the BCEWithLogitsLoss function.
+To improve the signal-to-noise ratio, the training dataset was augmented by removing background noise in Adobe Audition.
+
+Because bird vocalizations are sparse, all classes were boosted during training using pos_weight in the BCEWithLogitsLoss function.
+
 Below are examples of the model's ability to detect species like the **Thrush-like Wren** and **Amazonian Grosbeak**.
 
 ![Thrush-like Wren](./stable_logs/thrush.png)
